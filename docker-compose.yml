@@ -1,11 +1,11 @@
-version: "2"
+version: "3"
 
 services:
-
   picocms:
-    restart: always
+    restart: unless-stopped
     build: .
-    image: gprevost/picocms
+    image: picocms
+    container_name: picocms
     command:
       "/run.sh"
     ports:

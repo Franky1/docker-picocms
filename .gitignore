@@ -1,4 +1,11 @@
+# picocms specific
 plugins/
 content/
 themes/
 config/
+
+# vagrant specific
+.vagrant/
+
+# editor specific
+.vscode/
