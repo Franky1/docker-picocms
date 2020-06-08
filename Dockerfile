@@ -1,16 +1,12 @@
-# base box is latest php apache version
+# base box is always latest php:apache version
 FROM php:apache
 
 # Install Dependencies
 RUN apt-get update && apt-get install -y git-core libzip-dev && \
     docker-php-ext-install zip
 
-# Install S6
-# RUN curl -sL "https://github.com/just-containers/s6-overlay/releases/download/v1.16.0.0/s6-overlay-amd64.tar.gz" \
-#     | tar xz -C /
-
-# Install S6 (latest version 2.0.0.1)
-RUN curl -sL "https://github.com/just-containers/s6-overlay/releases/download/v2.0.0.1/s6-overlay-amd64.tar.gz" \
+# Install S6 (always latest version)
+RUN curl -sL "https://github.com/just-containers/s6-overlay/releases/latest/download/s6-overlay-amd64.tar.gz" \
     | tar xz -C /
 
 # Copy php.ini
@@ -31,7 +27,7 @@ RUN usermod -aG root www-data
 RUN mkdir -p /root/.composer/ && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-# Git clone PicoCMS
+# Git clone PicoCMS latest version
 RUN git clone https://github.com/picocms/Pico.git  /home/sites/picocms/
 
 WORKDIR /home/sites/picocms/

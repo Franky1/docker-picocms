@@ -1,0 +1,2 @@
+# keep file endings for shell scripts even on windows
+/docker/** text eol=lf
