@@ -10,13 +10,16 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./config:/home/sites/picocms/config
-      - ./content:/home/sites/picocms/content
-      - ./plugins:/home/sites/picocms/plugins
-      - ./themes:/home/sites/picocms/themes
+      - ./config:/var/www/html/pico/config
+      - ./content:/var/www/html/pico/content
+      - ./plugins:/var/www/html/pico/plugins
+      - ./themes:/var/www/html/pico/themes
+      - ./logging:/var/log/pico
     networks:
       - picocms
 
 networks:
   picocms:
     driver: bridge
+
+# TODO: network needed here at all?

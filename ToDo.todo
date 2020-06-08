@@ -1,6 +1,8 @@
-☐ fix line ending problem for windows
+✔ fix line ending problem for windows @done(20-06-08 16:39)
+☐ fix 500 error
 ☐ Add Vagrant description
 ☐ Add more Vagrant instructions
+✔ Change vagrant login directory @done(20-06-08 17:21)
 ☐ Add more themes for PicoCMS
 ☐ Refactor docker-compose file
 ☐ Test Setup

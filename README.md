@@ -4,9 +4,20 @@ This is a dockerized version of **PicoCMS**, a flat file content management syst
 
 ## Issues
 
-Updated setup not fully tested yet!
+> **_W.I.P._** <br>
+> Dont use this repo, it doesn't work anymore... <br>
+> _Installation changed - does not apply anymore to Pico 2.x_ <br>
+> _Needs to be fixed..._ <br>
+> Last Changes: 08.06.2020
 
-Last Changes: 08.06.2020
+### Installation Tutorials
+
+- <http://picocms.org/docs/>
+- <https://www.howtoforge.com/how-to-install-pico-cms-on-debian-10/>
+- <https://websiteforstudents.com/install-pico-cms-on-ubuntu-16-04-18-04-18-10-with-apache2-and-php-7-2/>
+- <https://www.linuxcloudvps.com/blog/install-and-configure-pico-cms-on-ubuntu-16-04/>
+- <https://github.com/shevabam/dockerfiles/tree/master/pico-cms>
+- <https://github.com/t-matsuo/docker-pico>
 
 ## Setup Options
 
@@ -45,6 +56,8 @@ Use the standard `docker-compose` commands:
 
 tbd. Not finished yet here...
 
+Visit: <http://10.0.23.19>
+
 ## PicoCMS volumes
 
 Once up and running, 4 docker volumes allow changes directly into the container:
@@ -60,8 +73,9 @@ The **pico_edit** plugin is pre-installed ([https://github.com/blocknotes/pico_e
 
 ### Access the backend
 
-Visit: `http://<your_site>/pico_edit`
-Initial password: `password`
+- Visit: <http://your_site/pico_edit>
+- Visit: <http://10.0.23.19/pico_edit>
+- Initial password: `password`
 
 ### Change the backend password
 
