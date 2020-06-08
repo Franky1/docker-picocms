@@ -6,8 +6,7 @@ services:
     build: .
     image: picocms
     container_name: picocms
-    command:
-      "/run.sh"
+    command: "/run.sh"
     ports:
       - 80:80
     volumes:

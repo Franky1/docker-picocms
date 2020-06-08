@@ -17,7 +17,7 @@ fi
 
 if [ ! -d "/home/sites/picocms/content" ] || [ ! "$(ls -A /home/sites/picocms/content)" ]; then
     echo "Moving content-sample to content"
-    mv /home/sites/picocms/content-sample/* /home/sites/picocms/content/  
+    mv /home/sites/picocms/content-sample/* /home/sites/picocms/content/
 fi
 
 rm -rf /home/sites/picocms/init

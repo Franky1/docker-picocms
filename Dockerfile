@@ -1,4 +1,4 @@
-# base box is always latest php:apache version
+# base box is (always latest) php:apache version
 FROM php:apache
 
 # Install Dependencies
